@@ -1,0 +1,252 @@
+#+hugo_base_dir: ~/blog
+#+hugo_section: post
+#+hugo_auto_set_lastmod: t
+#+author:
+#+hugo_custom_front_matter: :author "Sen Na"
+#+hugo_code_fence: nil
+
+* blog
+
+** DONE 从原来的 vim+markdown 到现在的 emacs+org-mode        :emacs:org:@emacs:
+:PROPERTIES:
+:EXPORT_FILE_NAME: from-vim-to-emacs
+:END:
+早在两年前我就对 emacs 有所耳闻，当时在 macbook 上下载了一个 emacs 下来，打开之后，面
+对着那个 scratch buffer 惊呆了，这个东西应该怎么用啊，我傻了啊。还记得当时误操作打
+开了好几个 buffer，啊？buffer 是什么意思啊。总之，在各种不适应之下，我最终放弃了这
+款“神之编辑器”，好后悔啊，如果当时就开始用 emacs 估计现在已经比较熟练了，就不用在
+大作业这么多的时期还忙着配置编辑器的事了。
+
+在暑假的时候，我开始接触 vim，在用了 vim 之后，我才明白像 vim 这样双手不离键盘的编辑
+方式有多么美妙，然后在暑假花了大量时间来配置 vim。之前我一直以为像 vim/emacs 这样的
+编辑器都是很古老的东西，所以界面应该比较丑，然后自动补全也会比较蠢。不过在使用了
+vim 之后，我意识到这种想法真是大错特错，vim 也可以很漂亮，也可以有像 coc.nvim 这样可
+以与 vscode 媲美的补全引擎。更重要的是，vim 的定制度非常高（虽然跟 emacs 比起来有点弟
+弟的感觉，不过也十分强大了），一个编辑器可以完全按照自己的想法进行工作，并且面对
+各种对于其他普通编辑器来说很复杂、重复性工作很多的编辑场景，都能应对自如，这不正
+是我理想中的编辑器嘛。
+
+我在使用 vim 的这几个月，还是十分眼馋 emacs 那妖娆的 gui 界面以及那个“伪装成操作系统的
+编辑器”的美誉。之后，国庆期间，我受到别人的诱惑，重新开始尝试 emacs。在几番尝试之
+后，我选择了 doom emacs 这个配置，内置 evil-mode，界面也很美观，作者也在很积极的更
+新。
+
+一开始还是和初学 vim 时一样，各种不适应，但是我还是坚持下来了，用它写了几乎全
+部的计算机网络的大作业（写这篇文章的时候，我还在写这个大作业）（其实 lsp-mode 的配
+置也没有那么困难，ccls 和 lsp-mode 配合提供的补全也让人很满意，还有 semantic
+highlight，可以说写 c 语言的体验很棒了，不过我到现在还不太会在 emacs 里面用 gdb 调试程
+序，不过也可以了）。
+
+然后在这个过程中，我接触了 emacs 的 org-mode。当然一开始我还不太会用，看了一个
+org-mode 的教学视频，然后开始用 org-mode，尝试了用 org-mode 管理日程，写一个 ppt，画
+uml 图，以及我现在在做的事情——写博客，文学编程、表格计算这种高阶技巧还没有尝试。
+现在感觉 org-mode 确实是 emacs 的一个大杀器，爱了爱了。感觉我以后大部分文本类型的工
+作都会在 org-mode 下进行了（这个模式真是太棒了！！）。
+
+我是看了子龙山人的博客之后，知道了 ox-hugo 这个东西。可以把写出的 org 文本转成
+markdown 然后部署到博客上。于是我把我的博客从 hexo 换成了 hugo，其实是个很简单的工作，
+网上一大堆教程。然后就可以以类似这样的方式写博客（这个截图用的是 org-screenshot，
+可以直接在 emacs 里截图然后插入到 org 文档里，极度方便）
+[[file:./images/screenshot-01.png]]
+
+这里=hugo_base_dir=就是博客的根目录，ox-hugo 就是通过这个知道博客的根目录的。这个
+东西的方便之处就在于，所有的博客文章都可以像这样，写在一个 subtree 里面，然后我只
+需要把这个 TODO 改成 DONE，就可以直接利用 ox-hugo 来生成博客文章了。当然这样生成之后
+并不会自动进行部署，需要手动进入博客目录里用 hugo 来部署。这样肯定是有点麻烦啊，于
+是我写了一点特别简单的 elisp（虽然我还完全不会 elisp，可能写的有点垃圾。。）。
+#+BEGIN_SRC elisp
+(defun deploy-my-blog ()
+  "Deploy my already generated markdown files to blog site."
+  (interactive)
+  (async-shell-command "~/Desktop/blog/deploy.sh"))
+#+END_SRC
+这样可以直接~M-x deploy-my-blog~来把写好的文章部署到 github 上。这里的~deploy.sh~
+就是一个很简单的 git 命令的脚本。
+
+到现在为止，我应该正式使用 emacs 十几天了。虽然只有短短的十几天，但是我已经感受到
+了 emacs 的美妙之处。我还会好好学一下 elisp，继续学习 emacs。等过段时间，我再回来看
+看。
+
+** DONE 在 emacs 配置 vue 的开发环境 :emacs:vue:前端:@emacs:
+:PROPERTIES:
+:EXPORT_FILE_NAME: emacs-love-vue
+:END:
+主要针对 doom emacs，其他的 emacs 配置应该也差不多。
+
+首先确保安装好了 company-mode 和 lsp-mode 还有 web-mode，在 init.el 中取消相应的注释并
+执行 doom refresh 即可。
+
+安装 vue-language-server。
+#+BEGIN_SRC sh
+npm install -g vue-language-server
+#+END_SRC
+
+设置在.vue 文件中使用 web-mode，然后给 web-mode 添加一个 hook，启动 web-mode 之后就
+再去启动 lsp-mode 就可以了（这一步 doom emacs 的话好像就不用自己去添加了），然后
+lsp-mode 应该会根据文件类型自己尝试去启动 vue-language-server。
+
+#+BEGIN_SRC elisp
+(def-package! web-mode
+  :mode ("\\.vue\\'" "\\.wxml\\'")
+  :config
+  ;; 这里就是设置一下缩进为2个空格
+  (setq web-mode-indent-level 2)
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+
+;; 如果需要手动加hook的话大概就是这样
+(def-package! lsp-mode
+  :hook ((css-mode js-mode web-mode) . lsp-mode))
+#+END_SRC
+** DONE Rust 中的 Rc 和 RefCell :rust:@rust:
+:PROPERTIES:
+:EXPORT_FILE_NAME: rust-rc-and-refcell
+:END:
+
+最近看了一点[[https://rust-unofficial.github.io/too-many-lists/][too-many-lists]]，感觉 Rust 好难啊。。
+
+其中在实现双向链表时用到了 Rc<RefCell<T>>这样的结构，经过大量的搜索，终于知道了为
+什么这样的结构是必要的。
+
+在 Rust 中，规定了一个 object 只能有一个 owner，可以有多个对这个 object 的不可变借用或
+者只有一个可变借用，同时这些借用也要满足 Rust 的生命周期规则，防止 dangling
+reference 的出现。
+
+这样的约束固然是不错的，但是有些时候还是显得束手束脚。而 Rc<T>可以提供共享的
+ownership，这样可以让多个变量同时指向一块内存（但是和引用不同，引用并不给予
+ownership），当没有任何变量指向这块内存时，把相应的资源释放即可。这其实就是“引用
+计数”了，也是 objective-c 和 swift 默认的内存管理方式，当然这种内存管理方式也是有一
+定问题的，比如“环引用”。
+
+虽然 Rc<T>提供了共享资源的方式，但是根据 Rust 的引用规则，如果一个资源有多个引用，
+这些引用是不能改变里面的 T 的。
+
+#+BEGIN_SRC rust
+let x = Rc::new(5i32);
+let y = x.clone();
+#+END_SRC
+
+在上面的代码中，x和 y 都是没有任何办法改变那个 5i32 的。
+
+那只好把 Rc<T>中的 T 再用 RefCell 包裹一下。
+
+#+BEGIN_SRC rust
+let x = Rc::new(RefCell::new(5i32));
+let y = x.clone();
+
+let val = x.borrow_mut();
+*val = 50;
+#+END_SRC
+
+这样，Rc 共享的东西实际上变成了 RefCell<T>，而 RefCell 可以对外面提供类似于&T 和&mut
+T 的 Ref<T>和 RefMut<T>，RefCell 并不要求自己是 mut 就可以改变内部的值（这是通过内部
+的 unsafe 实现的），这就是所谓的"interior mutability"。
+** DONE KDE ❤ i3 :kde:i3wm:@wmde:
+:PROPERTIES:
+:EXPORT_FILE_NAME: kde-loves-i3
+:END:
+
+我来整活啦。
+
+今天参照网络上的一些教程，尝试了在 kde 中，把 i3 作为其 wm，结果发现效果居然还挺不错。
+
+我一直很喜欢 tiling window manager，可以充分利用屏幕的空间，由于其相对简单的
+窗口排列逻辑，仅仅利用键盘就可以实现在窗口与 workspace 之间的快速切换。Who needs
+a mouse anymore?
+
+尽管 tiling window manager 有不少优点，但是它在有些情况下确实有些麻烦了。比如在
+i3wm 下，想要调节屏幕亮度的话，只能利用 xbacklight 或者一些其他的命令行工具 ，当
+然你也可以给它一个快捷键，只不过对于我这个懒人来说，实在是有些麻烦了，况且还有屏
+幕显示，音量，电池管理等种种，这些当然理论上是可以设置的，不过我实在是懒得搞
+了（当然不排除还是有许多人比较喜欢 i3 的可定制化度的，只是 i3 要定制起来是比较麻
+烦的）。所以可不可以保留比如 kde 的调节亮度，设置 wifi 连接 的 app tray，然后在窗口管
+理上还是 i3 那一套呢？
+
+在这之前，我已经用了很久的某个 KWin 的关于 tiling window management 的插件，这个
+插件做的还是相当不错的，但是可惜体验还是不够完美，实在是没有 i3 内味。
+
+今天我偶然搜索到了关于将 kde 和 i3 结合起来的博客内容，于是我跟着做了一下。
+
+先创建一个新的 desktop session，在 /usr/share/xsession 中新建一个
+plasma-i3.desktop，内容如下。
+
+#+BEGIN_SRC desktop
+[Desktop Entry]
+Type=XSession
+Exec=env KDEWM=/usr/bin/i3 /usr/bin/startplasma-x11
+DesktopNames=KDE
+Name=Plasma with i3
+Comment=Plasma with i3
+#+END_SRC
+
+然后打开 i3 的 config，针对 kde 做一些改动，把下面的内容加到 i3 的配置里。
+
+#+BEGIN_SRC config
+for_window [class="yakuake"] floating enable
+for_window [class="systemsettings"] floating enable
+for_window [class="plasmashell"] floating enable;
+for_window [class="Plasma"] floating enable; border none
+for_window [title="plasma-desktop"] floating enable; border none
+for_window [title="win7"] floating enable; border none
+for_window [class="krunner"] floating enable; border none
+for_window [class="Kmix"] floating enable; border none
+for_window [class="Klipper"] floating enable; border none
+for_window [class="Plasmoidviewer"] floating enable; border none
+for_window [class="(?i)*nextcloud*"] floating disable
+for_window [class="plasmashell" window_type="notification"] floating enable, border none, move position 30px 40px, no_focus
+#+END_SRC
+
+为了防止一些本该浮动的窗口占满屏幕。这里我把 notification 的位置设置了一下，因为如果不
+设置的话 notification 会默认出现在屏幕中间，有点烦的。其实也可以干脆不用
+kde 的通知，直接用 dunst。
+
+#+BEGIN_SRC config
+for_window [title="Desktop — Plasma"] kill; floating enable; border none
+#+END_SRC
+
+如果是英文版本的 kde 的话，上面这个是没有问题的。但是如果是其他语言的版本，可能会
+有所不同，可以用 wmctrl -l 来查看。
+
+为了方便以后登出，可以覆盖掉这个键位（或者不改应该问题也不大，我觉得）。
+
+#+BEGIN_SRC config
+bindsym $mod+Shift+e exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1
+#+END_SRC
+
+这样差不多就可以了。登出之后，可以看到桌面的选项中多了一个 Plasma with i3，选
+择这个 session，登录进来即可，然后就可以愉快地使用啦。
+
+还有一些问题，kde 的菜单栏并不会默认显示 i3 的 workspace，可以添加一个叫 Pager
+的 widget，这样就可以正常显示 i3 的 workspace 了。由于没有了 KDesktop，你可以使用
+一些别的 window compositor ，比如 compton。
+
+其实好像还挺简单的。
+
+[[./images/screenshot.png]]
+** DONE Tsinghua sslvpn :network:linux:
+:PROPERTIES:
+:EXPORT_FILE_NAME: Tsinghua-sslvpn
+:END:
+
+一篇水文。
+
+考虑到清华官方提供的 sslvpn 客户端 pulse secure，界面并不好看也不好用，提供一些
+其他的连接方式。
+
+*** 手动连接
+#+BEGIN_SRC bash
+sudo openconnect --protocol nc sslvpn.tsinghua.edu.cn --servercert sha256:398c6bccf414f7d71b6dc8d59b8e3b16f6d410f305aed7e30ce911c3a4064b31
+#+END_SRC
+*** network manager
+把这个 vpn 添加到 network manager 里面。
+
+#+BEGIN_SRC bash
+nmcli con add type vpn con-name "Tsinghua SSL VPN" ifname "*" vpn-type openconnect -- vpn.data "gateway=sslvpn.tsinghua.edu.cn,protocol=nc"
+#+END_SRC
+
+这样就可以直接在 network manager 里面进行连接了。
+
+#+CAPTION: like this...
+[[./images/20200326_130059_y6WpLf.png]]
+

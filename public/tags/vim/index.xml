@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/tags/vim/</link>
+    <description>Recent content in vim on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一些实用的vim技巧（尽量持续更新）</title>
+      <link>https://nasen23.github.io/post/practical-vim-skills/</link>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/practical-vim-skills/</guid>
+      <description>text object 的概念 text object 差不多是用 vim 来进行日常编辑时最为实用的一个部分了，这也是 vim 相比其他编辑器的强大之处。 对 text object 进行的操作大致可以总结成 1 d/y/c/v + i/a + [text</description>
+    </item>
+    
+    <item>
+      <title>mac上的窗口管理工具yabai以及配置自己的neovim</title>
+      <link>https://nasen23.github.io/post/yabai&#43;nvim/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/yabai&#43;nvim/</guid>
+      <description>先上效果图 安装并使用 yabai yabai 实际上是一段注入 Dock.app 的程序，所以为了使用它，我们必须关闭 macOS 的 System Integrity Protection，至于具体怎么关可以百度一下。当然</description>
+    </item>
+    
+  </channel>
+</rss>

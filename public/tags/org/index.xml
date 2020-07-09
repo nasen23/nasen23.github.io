@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>org on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/tags/org/</link>
+    <description>Recent content in org on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Oct 2019 00:36:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>从原来的vim&#43;markdown到现在的emacs&#43;org-mode</title>
+      <link>https://nasen23.github.io/post/from-vim-to-emacs/</link>
+      <pubDate>Sat, 19 Oct 2019 00:36:28 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/from-vim-to-emacs/</guid>
+      <description>早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nasen23.github.io/sitemap.xml

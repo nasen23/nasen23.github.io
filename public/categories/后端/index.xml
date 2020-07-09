@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>后端 on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/categories/%E5%90%8E%E7%AB%AF/</link>
+    <description>Recent content in 后端 on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/categories/%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用node&#43;express搭建服务器</title>
+      <link>https://nasen23.github.io/post/node&#43;express/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/node&#43;express/</guid>
+      <description>实验所用服务器ip地址：152.136.139.114 配置服务器环境 通过ssh登陆服务器，然后用apt安装nodejs和npm。经过这样简单</description>
+    </item>
+    
+  </channel>
+</rss>

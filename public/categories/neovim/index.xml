@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>neovim on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/categories/neovim/</link>
+    <description>Recent content in neovim on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/categories/neovim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mac上的窗口管理工具yabai以及配置自己的neovim</title>
+      <link>https://nasen23.github.io/post/yabai&#43;nvim/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/yabai&#43;nvim/</guid>
+      <description>先上效果图 安装并使用 yabai yabai 实际上是一段注入 Dock.app 的程序，所以为了使用它，我们必须关闭 macOS 的 System Integrity Protection，至于具体怎么关可以百度一下。当然</description>
+    </item>
+    
+  </channel>
+</rss>
