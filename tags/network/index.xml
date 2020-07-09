@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/tags/network/</link>
+    <description>Recent content in network on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Mar 2020 13:02:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tsinghua sslvpn</title>
+      <link>https://nasen23.github.io/post/tsinghua-sslvpn/</link>
+      <pubDate>Thu, 26 Mar 2020 13:02:19 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/tsinghua-sslvpn/</guid>
+      <description>一篇水文。 考虑到清华官方提供的 sslvpn 客户端 pulse secure，界面并不好看也不好用，提供一些 其他的连接方式。 手动连接 1 sudo openconnect --protocol nc sslvpn.tsinghua.edu.cn --servercert sha256:398c6bccf414f7d71b6dc8d59b8e3b16f6d410f305aed7e30ce911c3a4064b31 network manager 把这个 vpn 添加</description>
+    </item>
+    
+  </channel>
+</rss>

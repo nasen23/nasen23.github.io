@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>从原来的vim&#43;markdown到现在的emacs&#43;org-mode - nasen&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Sen Na" /><meta name="description" content="早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0 with theme even" />
+
+
+<link rel="canonical" href="https://nasen23.github.io/post/from-vim-to-emacs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="从原来的vim&#43;markdown到现在的emacs&#43;org-mode" />
+<meta property="og:description" content="早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nasen23.github.io/post/from-vim-to-emacs/" />
+<meta property="article:published_time" content="2019-10-19T00:36:28+08:00" />
+<meta property="article:modified_time" content="2019-10-19T00:36:28+08:00" />
+<meta itemprop="name" content="从原来的vim&#43;markdown到现在的emacs&#43;org-mode">
+<meta itemprop="description" content="早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这">
+<meta itemprop="dateModified" content="2019-10-19T00:36:28&#43;08:00" />
+<meta itemprop="wordCount" content="1639">
+
+
+
+<meta itemprop="keywords" content="emacs,org," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="从原来的vim&#43;markdown到现在的emacs&#43;org-mode"/>
+<meta name="twitter:description" content="早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">nasen&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">nasen&#39;s blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">从原来的vim&#43;markdown到现在的emacs&#43;org-mode</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-10-19 </span>
+        <div class="post-category">
+            <a href="/categories/emacs/"> emacs </a>
+            </div>
+          <span class="more-meta"> 1639 words </span>
+          <span class="more-meta"> 4 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这个东西应该怎么用啊，我傻了啊。还记得当时误操作打开了好几个buffer，啊？buffer是什么意思啊。总之，在各种不适应之下，我最终放弃了这款“神之编辑器”，好后悔啊，如果当时就开始用emacs估计现在已经比较熟练了，就不用在大作业这么多的时期还忙着配置编辑器的事了。</p>
+<p>在暑假的时候，我开始接触vim，在用了vim之后，我才明白像vim这样双手不离键盘的编辑方式有多么美妙，然后在暑假花了大量时间来配置vim。之前我一直以为像vim/emacs这样的编辑器都是很古老的东西，所以界面应该比较丑，然后自动补全也会比较蠢。不过在使用了
+vim之后，我意识到这种想法真是大错特错，vim也可以很漂亮，也可以有像coc.nvim这样可以与vscode媲美的补全引擎。更重要的是，vim的定制度非常高（虽然跟emacs比起来有点弟弟的感觉，不过也十分强大了），一个编辑器可以完全按照自己的想法进行工作，并且面对各种对于其他普通编辑器来说很复杂、重复性工作很多的编辑场景，都能应对自如，这不正是我理想中的编辑器嘛。</p>
+<p>我在使用vim的这几个月，还是十分眼馋emacs那妖娆的gui界面以及那个“伪装成操作系统的编辑器”的美誉。之后，国庆期间，我受到别人的诱惑，重新开始尝试emacs。在几番尝试之后，我选择了doom emacs这个配置，内置evil-mode，界面也很美观，作者也在很积极的更新。</p>
+<p>一开始还是和初学vim时一样，各种不适应，但是我还是坚持下来了，用它写了几乎全部的计算机网络的大作业（写这篇文章的时候，我还在写这个大作业）（其实lsp-mode的配置也没有那么困难，ccls和lsp-mode配合提供的补全也让人很满意，还有semantic
+highlight，可以说写c语言的体验很棒了，不过我到现在还不太会在emacs里面用gdb调试程序，不过也可以了）。</p>
+<p>然后在这个过程中，我接触了emacs的org-mode。当然一开始我还不太会用，看了一个
+org-mode的教学视频，然后开始用org-mode，尝试了用org-mode管理日程，写一个ppt，画
+uml图，以及我现在在做的事情——写博客，文学编程、表格计算这种高阶技巧还没有尝试。现在感觉org-mode确实是emacs的一个大杀器，爱了爱了。感觉我以后大部分文本类型的工作都会在org-mode下进行了（这个模式真是太棒了！！）。</p>
+<p>我是看了子龙山人的博客之后，知道了ox-hugo这个东西。可以把写出的org文本转成
+markdown然后部署到博客上。于是我把我的博客从hexo换成了hugo，其实是个很简单的工作，网上一大堆教程。然后就可以以类似这样的方式写博客（这个截图用的是org-screenshot，可以直接在emacs里截图然后插入到org文档里，极度方便）
+<img src="/ox-hugo/screenshot-01.png" alt=""></p>
+<p>这里=hugo_base_dir=就是博客的根目录，ox-hugo就是通过这个知道博客的根目录的。这个东西的方便之处就在于，所有的博客文章都可以像这样，写在一个subtree里面，然后我只需要把这个TODO改成DONE，就可以直接利用ox-hugo来生成博客文章了。当然这样生成之后并不会自动进行部署，需要手动进入博客目录里用hugo来部署。这样肯定是有点麻烦啊，于是我写了一点特别简单的elisp（虽然我还完全不会elisp，可能写的有点垃圾。。）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">deploy-my-blog</span> <span class="p">()</span>
+  <span class="s">&#34;Deploy my already generated markdown files to blog site.&#34;</span>
+  <span class="p">(</span><span class="nb">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">async-shell-command</span> <span class="s">&#34;~/Desktop/blog/deploy.sh&#34;</span><span class="p">))</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>这样可以直接~M-x deploy-my-blog~来把写好的文章部署到github上。这里的~deploy.sh~
+就是一个很简单的git命令的脚本。</p>
+<p>到现在为止，我应该正式使用emacs十几天了。虽然只有短短的十几天，但是我已经感受到了emacs的美妙之处。我还会好好学一下elisp，继续学习emacs。等过段时间，我再回来看看。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Sen Na</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-10-19
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/emacs/">emacs</a>
+          <a href="/tags/org/">org</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/emacs-love-vue/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">在emacs配置vue的开发环境</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/moving-to-emacs/">
+            <span class="next-text nav-default">我叛逃到emacs了</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="comments-gitment"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitment = new Gitment({
+        id: '2019-10-19 00:36:28 \u002b0800 CST',
+        title: '从原来的vim\u002bmarkdown到现在的emacs\u002borg-mode',
+        link: decodeURI(location.href),
+        desc: '早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这',
+        owner: 'nasen23',
+        repo: 'nasen23.github.io',
+        oauth: {
+          client_id: 'a12c304a204205997444',
+          client_secret: '4174fa753633ad5abb54739e010eda45eb4e3246'
+        }
+      });
+      gitment.render('comments-gitment');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="i@nasen.xyz" class="iconfont icon-email" title="email"></a>
+      <a href="http://github.com/nasen23" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/243573578" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://nasen23.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Sen Na</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-159579496-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
