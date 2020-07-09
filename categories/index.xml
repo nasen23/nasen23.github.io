@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/categories/</link>
+    <description>Recent content in Categories on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Mar 2020 22:46:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>wmde</title>
+      <link>https://nasen23.github.io/categories/wmde/</link>
+      <pubDate>Tue, 03 Mar 2020 22:46:37 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/wmde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://nasen23.github.io/categories/rust/</link>
+      <pubDate>Sat, 14 Dec 2019 01:12:54 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://nasen23.github.io/categories/emacs/</link>
+      <pubDate>Fri, 13 Dec 2019 00:17:36 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://nasen23.github.io/categories/vim/</link>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://nasen23.github.io/categories/macos/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neovim</title>
+      <link>https://nasen23.github.io/categories/neovim/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/neovim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node</title>
+      <link>https://nasen23.github.io/categories/node/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/node/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>后端</title>
+      <link>https://nasen23.github.io/categories/%E5%90%8E%E7%AB%AF/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/categories/%E5%90%8E%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

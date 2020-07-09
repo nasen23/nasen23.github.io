@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/</link>
+    <description>Recent content on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Mar 2020 13:02:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tsinghua sslvpn</title>
+      <link>https://nasen23.github.io/post/tsinghua-sslvpn/</link>
+      <pubDate>Thu, 26 Mar 2020 13:02:19 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/tsinghua-sslvpn/</guid>
+      <description>一篇水文。 考虑到清华官方提供的 sslvpn 客户端 pulse secure，界面并不好看也不好用，提供一些 其他的连接方式。 手动连接 1 sudo openconnect --protocol nc sslvpn.tsinghua.edu.cn --servercert sha256:398c6bccf414f7d71b6dc8d59b8e3b16f6d410f305aed7e30ce911c3a4064b31 network manager 把这个 vpn 添加</description>
+    </item>
+    
+    <item>
+      <title>KDE ❤ i3</title>
+      <link>https://nasen23.github.io/post/kde-loves-i3/</link>
+      <pubDate>Tue, 03 Mar 2020 22:46:37 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/kde-loves-i3/</guid>
+      <description>我来整活啦。 今天参照网络上的一些教程，尝试了在 kde 中，把 i3 作为其 wm，结果发现效果居然还挺不错。 我一直很喜欢 tiling window manager，可以充分利用屏</description>
+    </item>
+    
+    <item>
+      <title>Rust中的Rc和RefCell</title>
+      <link>https://nasen23.github.io/post/rust-rc-and-refcell/</link>
+      <pubDate>Sat, 14 Dec 2019 01:12:54 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/rust-rc-and-refcell/</guid>
+      <description>最近看了一点too-many-lists，感觉Rust好难啊。。 其中在实现双向链表时用到了Rc&amp;lt;RefCell&amp;gt;这样的结构，经过</description>
+    </item>
+    
+    <item>
+      <title>在emacs配置vue的开发环境</title>
+      <link>https://nasen23.github.io/post/emacs-love-vue/</link>
+      <pubDate>Fri, 13 Dec 2019 00:17:36 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/emacs-love-vue/</guid>
+      <description>主要针对doom emacs，其他的emacs配置应该也差不多。 首先确保安装好了company-mode和lsp-mode还有web-mode</description>
+    </item>
+    
+    <item>
+      <title>从原来的vim&#43;markdown到现在的emacs&#43;org-mode</title>
+      <link>https://nasen23.github.io/post/from-vim-to-emacs/</link>
+      <pubDate>Sat, 19 Oct 2019 00:36:28 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/from-vim-to-emacs/</guid>
+      <description>早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这</description>
+    </item>
+    
+    <item>
+      <title>我叛逃到emacs了</title>
+      <link>https://nasen23.github.io/post/moving-to-emacs/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/moving-to-emacs/</guid>
+      <description>最近叛逃到emacs了，如果有时间的话，我会把这些文章再用org重新弄一遍吧。</description>
+    </item>
+    
+    <item>
+      <title>一些实用的vim技巧（尽量持续更新）</title>
+      <link>https://nasen23.github.io/post/practical-vim-skills/</link>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/practical-vim-skills/</guid>
+      <description>text object 的概念 text object 差不多是用 vim 来进行日常编辑时最为实用的一个部分了，这也是 vim 相比其他编辑器的强大之处。 对 text object 进行的操作大致可以总结成 1 d/y/c/v + i/a + [text</description>
+    </item>
+    
+    <item>
+      <title>mac上的窗口管理工具yabai以及配置自己的neovim</title>
+      <link>https://nasen23.github.io/post/yabai&#43;nvim/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/yabai&#43;nvim/</guid>
+      <description>先上效果图 安装并使用 yabai yabai 实际上是一段注入 Dock.app 的程序，所以为了使用它，我们必须关闭 macOS 的 System Integrity Protection，至于具体怎么关可以百度一下。当然</description>
+    </item>
+    
+    <item>
+      <title>使用node&#43;express搭建服务器</title>
+      <link>https://nasen23.github.io/post/node&#43;express/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/node&#43;express/</guid>
+      <description>实验所用服务器ip地址：152.136.139.114 配置服务器环境 通过ssh登陆服务器，然后用apt安装nodejs和npm。经过这样简单</description>
+    </item>
+    
+  </channel>
+</rss>

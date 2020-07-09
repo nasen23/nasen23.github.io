@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/tags/emacs/</link>
+    <description>Recent content in emacs on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 13 Dec 2019 00:17:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在emacs配置vue的开发环境</title>
+      <link>https://nasen23.github.io/post/emacs-love-vue/</link>
+      <pubDate>Fri, 13 Dec 2019 00:17:36 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/emacs-love-vue/</guid>
+      <description>主要针对doom emacs，其他的emacs配置应该也差不多。 首先确保安装好了company-mode和lsp-mode还有web-mode</description>
+    </item>
+    
+    <item>
+      <title>从原来的vim&#43;markdown到现在的emacs&#43;org-mode</title>
+      <link>https://nasen23.github.io/post/from-vim-to-emacs/</link>
+      <pubDate>Sat, 19 Oct 2019 00:36:28 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/from-vim-to-emacs/</guid>
+      <description>早在两年前我就对emacs有所耳闻，当时在macbook上下载了一个emacs下来，打开之后，面对着那个scratch buffer惊呆了，这</description>
+    </item>
+    
+    <item>
+      <title>我叛逃到emacs了</title>
+      <link>https://nasen23.github.io/post/moving-to-emacs/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://nasen23.github.io/post/moving-to-emacs/</guid>
+      <description>最近叛逃到emacs了，如果有时间的话，我会把这些文章再用org重新弄一遍吧。</description>
+    </item>
+    
+  </channel>
+</rss>

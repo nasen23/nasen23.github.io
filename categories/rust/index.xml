@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rust on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/categories/rust/</link>
+    <description>Recent content in rust on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Dec 2019 01:12:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/categories/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust中的Rc和RefCell</title>
+      <link>https://nasen23.github.io/post/rust-rc-and-refcell/</link>
+      <pubDate>Sat, 14 Dec 2019 01:12:54 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/rust-rc-and-refcell/</guid>
+      <description>最近看了一点too-many-lists，感觉Rust好难啊。。 其中在实现双向链表时用到了Rc&amp;lt;RefCell&amp;gt;这样的结构，经过</description>
+    </item>
+    
+  </channel>
+</rss>

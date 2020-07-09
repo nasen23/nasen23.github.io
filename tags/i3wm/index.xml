@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>i3wm on nasen&#39;s blog</title>
+    <link>https://nasen23.github.io/tags/i3wm/</link>
+    <description>Recent content in i3wm on nasen&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Mar 2020 22:46:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://nasen23.github.io/tags/i3wm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KDE ❤ i3</title>
+      <link>https://nasen23.github.io/post/kde-loves-i3/</link>
+      <pubDate>Tue, 03 Mar 2020 22:46:37 +0800</pubDate>
+      
+      <guid>https://nasen23.github.io/post/kde-loves-i3/</guid>
+      <description>我来整活啦。 今天参照网络上的一些教程，尝试了在 kde 中，把 i3 作为其 wm，结果发现效果居然还挺不错。 我一直很喜欢 tiling window manager，可以充分利用屏</description>
+    </item>
+    
+  </channel>
+</rss>
